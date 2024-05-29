@@ -32,9 +32,40 @@ const embedder = new GoogleGenerativeAiEmbeddingFunction({googleApiKey: /*proces
 
 // Crea il client Chroma
 const client = new ChromaClient({
-  path: /*process.env.CHROMA_PATH*/
+  path: /*process.env.CHROMA_PATH*/""
 });
 
 // Crea una collezione con gli embed del documento
 const collection = await client.createCollection({name: "document", embeddingFunction: embedder})
 
+// Cerca dei Risultati nel database
+const results = await collection.query({
+  queryTexts: [""],
+  nResults: 2,
+});
+
+// Invia i documenti a GoogleGenerativeAi
+const model = genAI.getGenerativeModel({model:"gemini-1.5-flash-latest"})
+
+// Modello Chat con documento pre inserito
+const chat = model.startChat({
+  history: [
+    {
+      role: "user",
+      parts: [{ text: `Ciao google devi sapere tutto di questo documento ${results.documents.map((doc) => {return doc})}` }],
+    },
+  ],
+  generationConfig: {
+    maxOutputTokens: 100,
+  },
+});
+
+const msg = "Question about document";
+
+// Invia il messaggio alla chat
+const result = await chat.sendMessage(msg);
+
+// Il bot risponde
+const response = result.response;
+const text = response.text();
+console.log(text);
