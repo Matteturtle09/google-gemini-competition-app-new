@@ -30,6 +30,11 @@ const genAI = new GoogleGenerativeAI(/*process.env.API_KEY*/)
 // Crea l'oggetto EmbedderGoogleGenerativeAI
 const embedder = new GoogleGenerativeAiEmbeddingFunction({googleApiKey: /*process.env.API_KEY*/""})
 
+// Crea il client Chroma
+const client = new ChromaClient({
+  path: /*process.env.CHROMA_PATH*/
+});
+
 // Crea una collezione con gli embed del documento
 const collection = await client.createCollection({name: "document", embeddingFunction: embedder})
 
