@@ -1,3 +1,4 @@
+"use client";
 import React, { Children } from 'react';
 import { onAuthStateChanged, getAuth } from 'firebase/auth';
 import firebaseApp from '../firebase/config';
@@ -29,8 +30,8 @@ export const AuthContextProvider = ({
 
     }, [])
     return (
-        <AuthContext.Provider value= {{user}}>
-            {loading ? <div>Loading...</div> : children}
+        <AuthContext.Provider value={{user, loading}}>
+            {children}
         </AuthContext.Provider>
     )
 }
