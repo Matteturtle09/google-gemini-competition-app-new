@@ -34,7 +34,7 @@ const NewBotForm = () => {
                     <Label htmlFor="botupload">Upload your bot's datasource</Label>
                     <FileUpload />
                 </div>
-                <Button>Submit</Button>
+                <Button className="mt-1.5">Submit</Button>
             </form>
         </div>
     </div>
