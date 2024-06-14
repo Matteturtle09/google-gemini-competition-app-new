@@ -16,7 +16,7 @@ const EditBotForm = () => {
         description: "You are a good and precise assistant that works for acme fridges.",
         datasource: {
             hostedFiles: [{
-                id: "1", src: "bucket.com/myfile.pdf", fileName: "file.pdf", size: "18.4 mb",
+                id: "1", src: "bucket.com/myfile.pdf", fileName: "file.pdf", size: 18.4,
             }]
         }
     });
