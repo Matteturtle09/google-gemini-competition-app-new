@@ -6,6 +6,16 @@
 .pnp.js
 .yarn/install-state.gz
 
+#vs2022
+.next
+.vscode
+.webapp.sln
+.webapp.njsproj.user
+.webapp.njsproj
+.nuget.config
+/obj
+/bin
+
 # testing
 /coverage
 
