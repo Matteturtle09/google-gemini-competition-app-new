@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b97136cc-81fb-4b98-91f8-70543a600c7b}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile>tailwind.config.ts</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <EnableTypeScript>true</EnableTypeScript>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="PROJECT_MIGRATION_LOG.txt" />
+    <Content Include=".eslintrc.json" />
+    <Content Include="components.json" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <None Include="tsconfig.json" />
+    <Content Include="README.md" />
+    <None Include="tailwind.config.ts" />
+    <Content Include="app\globals.css" />
+    <Content Include="app\favicon.ico" />
+    <None Include="app\layout.tsx" />
+    <None Include="components\AccountNav.tsx" />
+    <None Include="components\AppHeader.tsx" />
+    <None Include="components\DestructiveToast.tsx" />
+    <None Include="components\EditBotForm.tsx" />
+    <None Include="components\EmbeddedChat.tsx" />
+    <None Include="components\FileUpload.tsx" />
+    <None Include="components\MainNav.tsx" />
+    <None Include="components\MessageBubble.tsx" />
+    <None Include="components\Messages.tsx" />
+    <None Include="components\MobileNav.tsx" />
+    <None Include="components\NewBotForm.tsx" />
+    <None Include="components\UploadedFiles.tsx" />
+    <None Include="components\UserAvatar.tsx" />
+    <None Include="constants\constants.ts" />
+    <None Include="lib\types.ts" />
+    <None Include="lib\utils.ts" />
+    <Content Include="public\next.svg" />
+    <Content Include="public\vercel.svg" />
+    <None Include="app\(pages)\layout.tsx" />
+    <None Include="app\(pages)\page.tsx" />
+    <None Include="app\api\route.ts" />
+    <None Include="app\(pages)\dashboard\page.tsx" />
+    <None Include="app\(pages)\dashboard\edit\page.tsx" />
+    <None Include="app\(testing)\testing\page.tsx" />
+    <None Include="app\api\createnewbot\route.ts" />
+    <None Include="app\api\editbot\route.ts" />
+    <None Include="app\auth\(auth)\layout.tsx" />
+    <None Include="app\auth\(auth)\signin\page.tsx" />
+    <None Include="app\auth\(auth)\signup\page.tsx" />
+    <None Include="components\ui\use-toast.ts" />
+    <None Include="components\ui\avatar.tsx" />
+    <None Include="components\ui\background-gradient-animation.tsx" />
+    <None Include="components\ui\button.tsx" />
+    <None Include="components\ui\dialog.tsx" />
+    <None Include="components\ui\form.tsx" />
+    <None Include="components\ui\input.tsx" />
+    <None Include="components\ui\label.tsx" />
+    <None Include="components\ui\progress.tsx" />
+    <None Include="components\ui\scroll-area.tsx" />
+    <None Include="components\ui\sheet.tsx" />
+    <None Include="components\ui\table.tsx" />
+    <None Include="components\ui\textarea.tsx" />
+    <None Include="components\ui\toast.tsx" />
+    <None Include="components\ui\toaster.tsx" />
+    <None Include="lib\context\AuthContext.tsx" />
+    <None Include="lib\firebase\config.ts" />
+    <None Include="lib\firebase\auth\signIn.ts" />
+    <None Include="lib\firebase\auth\signup.ts" />
+    <None Include="lib\firebase\firestore\addData.ts" />
+    <None Include="lib\firebase\firestore\getData.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app" />
+    <Folder Include="app\(pages)" />
+    <Folder Include="app\(pages)\dashboard" />
+    <Folder Include="app\(pages)\dashboard\edit" />
+    <Folder Include="app\(testing)" />
+    <Folder Include="app\(testing)\testing" />
+    <Folder Include="app\api" />
+    <Folder Include="app\api\createnewbot" />
+    <Folder Include="app\api\editbot" />
+    <Folder Include="app\api\bot\" />
+    <Folder Include="app\api\new-session\" />
+    <Folder Include="app\auth" />
+    <Folder Include="app\auth\(auth)" />
+    <Folder Include="app\auth\(auth)\signin" />
+    <Folder Include="app\auth\(auth)\signup" />
+    <Folder Include="components" />
+    <Folder Include="components\ui" />
+    <Folder Include="constants" />
+    <Folder Include="lib" />
+    <Folder Include="lib\ai-models\gemini\" />
+    <Folder Include="lib\context" />
+    <Folder Include="lib\databases\chroma\" />
+    <Folder Include="lib\firebase" />
+    <Folder Include="lib\firebase\auth" />
+    <Folder Include="lib\firebase\firestore" />
+    <Folder Include="lib\ai-models\" />
+    <Folder Include="lib\databases\" />
+    <Folder Include="lib\pdf\" />
+    <Folder Include="lib\pdf\extractor\" />
+    <Folder Include="public" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="lib\databases\chroma\database.ts" />
+    <TypeScriptCompile Include="app\api\new-session\route.ts" />
+    <TypeScriptCompile Include="lib\ai-models\gemini\gemini-ai-model.ts" />
+    <TypeScriptCompile Include="app\api\bot\route.ts" />
+    <TypeScriptCompile Include="lib\ai-models\sessions.ts" />
+    <TypeScriptCompile Include="lib\pdf\extractor\pdfextractor.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

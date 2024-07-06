@@ -1,6 +1,5 @@
 import { type ClassValue, clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
-import { NextRequest } from 'next/server'
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -30,8 +29,4 @@ export function getDisplayName(str: string) {
   }else{
     return displayName;
   }
-}
-
-export function getCookie(req: NextRequest, name: string, ifNull: string = ''): string {
-    return req.cookies.get(name)?.value || ifNull;
 }

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{fdac8a6f-3595-4f1a-894a-7ed1999c1ae3}</ProjectGuid>
+        <ProjectHome>.</ProjectHome>
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile />
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <EnableTypeScript>true</EnableTypeScript>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="PROJECT_MIGRATION_LOG.txt" />
+        <Content Include="package.json" />
+        <Content Include="README.md" />
+        <Content Include="demos\package-lock.json" />
+        <Content Include="demos\package.json" />
+        <Content Include="webapp\.eslintrc.json" />
+        <Content Include="webapp\components.json" />
+        <Content Include="webapp\package-lock.json" />
+        <Content Include="webapp\package.json" />
+        <None Include="webapp\tsconfig.json" />
+        <Content Include="webapp\README.md" />
+        <None Include="webapp\tailwind.config.ts" />
+        <Content Include="webapp\app\globals.css" />
+        <Content Include="webapp\app\favicon.ico" />
+        <None Include="webapp\app\layout.tsx" />
+        <None Include="webapp\components\AccountNav.tsx" />
+        <None Include="webapp\components\AppHeader.tsx" />
+        <None Include="webapp\components\DestructiveToast.tsx" />
+        <None Include="webapp\components\EditBotForm.tsx" />
+        <None Include="webapp\components\EmbeddedChat.tsx" />
+        <None Include="webapp\components\FileUpload.tsx" />
+        <None Include="webapp\components\MainNav.tsx" />
+        <None Include="webapp\components\MessageBubble.tsx" />
+        <None Include="webapp\components\Messages.tsx" />
+        <None Include="webapp\components\MobileNav.tsx" />
+        <None Include="webapp\components\NewBotForm.tsx" />
+        <None Include="webapp\components\UploadedFiles.tsx" />
+        <None Include="webapp\components\UserAvatar.tsx" />
+        <None Include="webapp\constants\constants.ts" />
+        <None Include="webapp\lib\types.ts" />
+        <None Include="webapp\lib\utils.ts" />
+        <Content Include="webapp\public\next.svg" />
+        <Content Include="webapp\public\vercel.svg" />
+        <None Include="webapp\app\(pages)\layout.tsx" />
+        <None Include="webapp\app\(pages)\page.tsx" />
+        <None Include="webapp\app\api\route.ts" />
+        <None Include="webapp\app\(pages)\dashboard\page.tsx" />
+        <None Include="webapp\app\(pages)\dashboard\edit\page.tsx" />
+        <None Include="webapp\app\(testing)\testing\page.tsx" />
+        <None Include="webapp\app\api\createnewbot\route.ts" />
+        <None Include="webapp\app\api\editbot\route.ts" />
+        <None Include="webapp\app\auth\(auth)\layout.tsx" />
+        <None Include="webapp\app\auth\(auth)\signin\page.tsx" />
+        <None Include="webapp\app\auth\(auth)\signup\page.tsx" />
+        <None Include="webapp\components\ui\use-toast.ts" />
+        <None Include="webapp\components\ui\avatar.tsx" />
+        <None Include="webapp\components\ui\background-gradient-animation.tsx" />
+        <None Include="webapp\components\ui\button.tsx" />
+        <None Include="webapp\components\ui\dialog.tsx" />
+        <None Include="webapp\components\ui\form.tsx" />
+        <None Include="webapp\components\ui\input.tsx" />
+        <None Include="webapp\components\ui\label.tsx" />
+        <None Include="webapp\components\ui\progress.tsx" />
+        <None Include="webapp\components\ui\scroll-area.tsx" />
+        <None Include="webapp\components\ui\sheet.tsx" />
+        <None Include="webapp\components\ui\table.tsx" />
+        <None Include="webapp\components\ui\textarea.tsx" />
+        <None Include="webapp\components\ui\toast.tsx" />
+        <None Include="webapp\components\ui\toaster.tsx" />
+        <None Include="webapp\lib\context\AuthContext.tsx" />
+        <None Include="webapp\lib\firebase\config.ts" />
+        <None Include="webapp\lib\firebase\auth\signIn.ts" />
+        <None Include="webapp\lib\firebase\auth\signup.ts" />
+        <None Include="webapp\lib\firebase\firestore\addData.ts" />
+        <None Include="webapp\lib\firebase\firestore\getData.ts" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="demos" />
+        <Folder Include="demos\example_files" />
+        <Folder Include="webapp" />
+        <Folder Include="webapp\app" />
+        <Folder Include="webapp\app\(pages)" />
+        <Folder Include="webapp\app\(pages)\dashboard" />
+        <Folder Include="webapp\app\(pages)\dashboard\edit" />
+        <Folder Include="webapp\app\(testing)" />
+        <Folder Include="webapp\app\(testing)\testing" />
+        <Folder Include="webapp\app\api" />
+        <Folder Include="webapp\app\api\createnewbot" />
+        <Folder Include="webapp\app\api\editbot" />
+        <Folder Include="webapp\app\auth" />
+        <Folder Include="webapp\app\auth\(auth)" />
+        <Folder Include="webapp\app\auth\(auth)\signin" />
+        <Folder Include="webapp\app\auth\(auth)\signup" />
+        <Folder Include="webapp\components" />
+        <Folder Include="webapp\components\ui" />
+        <Folder Include="webapp\constants" />
+        <Folder Include="webapp\lib" />
+        <Folder Include="webapp\lib\context" />
+        <Folder Include="webapp\lib\firebase" />
+        <Folder Include="webapp\lib\firebase\auth" />
+        <Folder Include="webapp\lib\firebase\firestore" />
+        <Folder Include="webapp\public" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>

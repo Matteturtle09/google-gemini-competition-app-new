@@ -1,0 +1,10 @@
+#vs2022
+.gemini-api-contest.njsproj
+.gemini-api-contest.njsproj.user
+.gemini-api-contest.sln
+.MIGRATED_PROJECT.esproj
+.nuget.config
+.package.json
+.package-lock.json
+/obj
+.vscode
