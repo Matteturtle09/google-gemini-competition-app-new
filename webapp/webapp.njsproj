@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{b97136cc-81fb-4b98-91f8-70543a600c7b}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectView>ProjectFiles</ProjectView>
     <StartupFile>tailwind.config.ts</StartupFile>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -99,19 +99,25 @@
     <Folder Include="components\ui" />
     <Folder Include="constants" />
     <Folder Include="lib" />
+    <Folder Include="lib\ai-models\gemini\" />
     <Folder Include="lib\context" />
+    <Folder Include="lib\databases\chroma\" />
     <Folder Include="lib\firebase" />
     <Folder Include="lib\firebase\auth" />
     <Folder Include="lib\firebase\firestore" />
+    <Folder Include="lib\ai-models\" />
+    <Folder Include="lib\databases\" />
+    <Folder Include="lib\pdf\" />
+    <Folder Include="lib\pdf\extractor\" />
     <Folder Include="public" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="lib\databases\chroma\database.ts" />
     <TypeScriptCompile Include="app\api\new-session\route.ts" />
-    <TypeScriptCompile Include="app\api\bot\ai-model.ts" />
-    <TypeScriptCompile Include="app\api\bot\gemini-ai-model.ts" />
+    <TypeScriptCompile Include="lib\ai-models\gemini\gemini-ai-model.ts" />
     <TypeScriptCompile Include="app\api\bot\route.ts" />
-    <TypeScriptCompile Include="app\api\new-session\sessions.ts" />
-    <TypeScriptCompile Include="app\api\utils.ts" />
+    <TypeScriptCompile Include="lib\ai-models\sessions.ts" />
+    <TypeScriptCompile Include="lib\pdf\extractor\pdfextractor.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
