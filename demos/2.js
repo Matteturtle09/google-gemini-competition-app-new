@@ -3,6 +3,8 @@ import {
     PDFServices,
     MimeType,
     ExtractPDFParams,
+    TableStructureType,
+    ExtractRenditionsElementType,
     ExtractElementType,
     ExtractPDFJob,
     ExtractPDFResult
@@ -24,21 +26,23 @@ import 'dotenv/config'
         const pdfServices = new PDFServices({ credentials })
 
         // Creates an asset(s) from source file(s) and upload
-        readStream = fs.createReadStream("/workspaces/google-gemini-competition-app-new/demos/example_files/1.pdf")
-        const inputAsset = await pdfServices.upload({
-            readStream,
+        readStream = fs.createReadStream("example_files/1.pdf")
+        const inputAsset = pdfServices.upload({
+            readStream: readStream,
             mimeType: MimeType.PDF
         })
-
-        // Create parameters for the job
         const params = new ExtractPDFParams({
-            elementsToExtract: [ExtractElementType.TEXT]
+            //tableStructureType: TableStructureType.CSV,
+            //elementsToExtractRenditions: [
+            //    //ExtractRenditionsElementType.FIGURES,
+            //    //ExtractRenditionsElementType.TABLES
+            //],
+            elementsToExtract: [
+                ExtractElementType.TEXT
+                //ExtractElementType.TABLES
+            ]
         })
-
-        // Creates a new job instance
         const job = new ExtractPDFJob({ inputAsset, params })
-
-        // Submit the job and get the job result
         const pollingURL = await pdfServices.submit({ job })
         const pdfServicesResponse = await pdfServices.getJobResult({
             pollingURL,

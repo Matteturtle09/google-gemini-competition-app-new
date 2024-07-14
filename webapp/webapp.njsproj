@@ -17,7 +17,6 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
-    <Content Include="PROJECT_MIGRATION_LOG.txt" />
     <Content Include=".eslintrc.json" />
     <Content Include="components.json" />
     <Content Include="package-lock.json" />
@@ -87,10 +86,10 @@
     <Folder Include="app\(testing)" />
     <Folder Include="app\(testing)\testing" />
     <Folder Include="app\api" />
+    <Folder Include="app\api\bot\new\" />
     <Folder Include="app\api\createnewbot" />
     <Folder Include="app\api\editbot" />
     <Folder Include="app\api\bot\" />
-    <Folder Include="app\api\new-session\" />
     <Folder Include="app\auth" />
     <Folder Include="app\auth\(auth)" />
     <Folder Include="app\auth\(auth)\signin" />
@@ -99,25 +98,29 @@
     <Folder Include="components\ui" />
     <Folder Include="constants" />
     <Folder Include="lib" />
-    <Folder Include="lib\ai-models\gemini\" />
     <Folder Include="lib\context" />
-    <Folder Include="lib\databases\chroma\" />
     <Folder Include="lib\firebase" />
     <Folder Include="lib\firebase\auth" />
     <Folder Include="lib\firebase\firestore" />
-    <Folder Include="lib\ai-models\" />
+    <Folder Include="lib\ai-model\" />
     <Folder Include="lib\databases\" />
+    <Folder Include="lib\session\" />
     <Folder Include="lib\pdf\" />
     <Folder Include="lib\pdf\extractor\" />
+    <Folder Include="lib\pdf\extractor\adobe\" />
     <Folder Include="public" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="lib\databases\chroma\database.ts" />
-    <TypeScriptCompile Include="app\api\new-session\route.ts" />
-    <TypeScriptCompile Include="lib\ai-models\gemini\gemini-ai-model.ts" />
+    <TypeScriptCompile Include="app\api\bot\new\route.ts" />
+    <TypeScriptCompile Include="lib\ai-model\AIChat.ts" />
+    <TypeScriptCompile Include="lib\ai-model\assets.ts" />
+    <TypeScriptCompile Include="lib\session\Session.ts" />
     <TypeScriptCompile Include="app\api\bot\route.ts" />
-    <TypeScriptCompile Include="lib\ai-models\sessions.ts" />
-    <TypeScriptCompile Include="lib\pdf\extractor\pdfextractor.ts" />
+    <TypeScriptCompile Include="lib\databases\Database.ts" />
+    <TypeScriptCompile Include="lib\errors.ts" />
+    <TypeScriptCompile Include="lib\pdf\extractor\adobe\AdobePDFExtractor.ts" />
+    <TypeScriptCompile Include="lib\pdf\extractor\PDFExtractor.ts" />
+    <TypeScriptCompile Include="lib\session\sessions.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
