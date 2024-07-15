@@ -1,4 +1,4 @@
-import { PDFExtractor, PDFExtractionParams } from '../pdf/extractor/PDFExtractor'
+import { PDFExtractor, PDFExtractionParams } from '../pdf/extractor/pdfextractor'
 import { Database, DatabaseParams } from '../databases/Database'
 import { AIChat, AIChatParams } from '../ai-model/AIChat'
 import { GenericAsset, Prompt, Answer } from '../ai-model/assets';

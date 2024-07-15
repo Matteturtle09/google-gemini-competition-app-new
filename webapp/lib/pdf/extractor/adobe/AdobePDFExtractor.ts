@@ -1,3 +1,4 @@
+// TOFIX: Circular dependency
 import {
 	MimeType,
 	ExtractElementType,
@@ -14,7 +15,7 @@ import {
 import JSZip from 'jszip'
 import { Readable } from 'stream';
 import { ImageAsset, GenericAsset } from '../../../ai-model/assets'
-import { PDF, PDFExtractor, AdobePDFExtractionCredentials } from '../PDFExtractor'
+import { PDF, PDFExtractor, AdobePDFExtractionCredentials } from '../pdfextractor'
 import { PDFExtractionError } from '../../../errors';
 
 type ExtractedJson = {

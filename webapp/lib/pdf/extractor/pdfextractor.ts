@@ -1,3 +1,4 @@
+// TOFIX: Circular dependency
 import { GenericAsset } from '../../ai-model/assets';
 import { AdobePDFExtractor } from './adobe/AdobePDFExtractor'
 
