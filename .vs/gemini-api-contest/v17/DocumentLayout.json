@@ -3,8 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\leona\\source\\repos\\google-gemini-competition-app-new\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B97136CC-81FB-4B98-91F8-70543A600C7B}|webapp\\webapp.njsproj|C:\\Users\\leona\\source\\repos\\google-gemini-competition-app-new\\webapp\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{B97136CC-81FB-4B98-91F8-70543A600C7B}|webapp\\webapp.njsproj|solutionrelative:webapp\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leona\\OneDrive\\Desktop\\test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B97136CC-81FB-4B98-91F8-70543A600C7B}|webapp\\webapp.njsproj|C:\\Users\\leona\\source\\repos\\google-gemini-competition-app-new\\webapp\\app\\api\\bot\\new\\route.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|",
+      "RelativeMoniker": "D:0:0:{B97136CC-81FB-4B98-91F8-70543A600C7B}|webapp\\webapp.njsproj|solutionrelative:webapp\\app\\api\\bot\\new\\route.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,6 +22,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -46,23 +53,32 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\leona\\source\\repos\\google-gemini-competition-app-new\\webapp\\.gitignore",
-              "RelativeDocumentMoniker": "webapp\\.gitignore",
-              "ToolTip": "C:\\Users\\leona\\source\\repos\\google-gemini-competition-app-new\\webapp\\.gitignore",
-              "RelativeToolTip": "webapp\\.gitignore",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001407|",
-              "WhenOpened": "2024-07-02T15:50:46.344Z",
+              "Title": "test.js",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Desktop\\test.js",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive\\Desktop\\test.js",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Desktop\\test.js",
+              "RelativeToolTip": "..\\..\\..\\OneDrive\\Desktop\\test.js",
+              "ViewState": "AQIAACkAAAAAAAAAAAAuwCoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-14T08:41:30.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "route.ts",
+              "DocumentMoniker": "C:\\Users\\leona\\source\\repos\\google-gemini-competition-app-new\\webapp\\app\\api\\bot\\new\\route.ts",
+              "RelativeDocumentMoniker": "webapp\\app\\api\\bot\\new\\route.ts",
+              "ToolTip": "C:\\Users\\leona\\source\\repos\\google-gemini-competition-app-new\\webapp\\app\\api\\bot\\new\\route.ts",
+              "RelativeToolTip": "webapp\\app\\api\\bot\\new\\route.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-07-14T08:41:56.306Z",
               "EditorCaption": ""
             }
           ]
